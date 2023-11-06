@@ -1,0 +1,189 @@
+html{
+    scrollbar-color: dimgray black;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url("MOSHED-2023-10-16-16-53-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 1700px;
+    background-attachment: fixed
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.block{
+    background-color: rgba(0,0,0, .7);
+    background-size: 500px 700px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.navigation{
+    margin-left: 10px;
+    font-size: 20px;
+    word-spacing: 2px;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.search{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+table {
+    color: white;
+    margin: auto;
+    border-collapse: collapse;
+    padding: 5px;
+    table-layout: fixed;
+    width: 100%;
+
+}
+
+p {
+    color: white;
+}
+
+.noDB {
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+}
+
+.cart{
+    display: inline;
+
+}
+
+td{
+    padding: 20px;
+    text-align: center;
+
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.about{
+    text-align: left;
+}
+
+.secBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.info{
+    line-height: 30px;
+    color: white;
+}
+
+figure{
+    text-align: center;
+    color: rgba(255,255,255, .7);
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+.text\+pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box
+}
+
+.contactLinks{
+    text-align: center;
+    word-spacing: 20px;
+}
+
+
+
+form{
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    margin: auto;
+}
+fieldset{
+    border: 0 none;
+}
+
+legend {
+    background-color: darkslateblue;
+    color: #fff;
+    padding: 3px 6px;
+    margin: auto;
+}
+
+
+.block1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.button {
+    background-color: darkslateblue;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    padding: 7px 9px;
+    font-size: 19px;
+}
+
+.button0 {
+    background-color: darkslateblue;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 7px;
+}
+
+.input {
+    font-family: Verdana, sans-serif;
+    background-color: rgba(0,0,0, .7);
+    color: white;
+    border: 2px solid darkslateblue;
+    padding: 3px;
+    outline: none;
+    width: 250px;
+    height: 20px;
+}
+
+input[type='radio'] {
+    accent-color: darkslateblue;
+}
+
+.formSens{
+    font-size: 19px;
+    text-align: center;
+    margin-top: 0;
+}
+
+
