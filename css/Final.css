@@ -186,4 +186,17 @@ input[type='radio'] {
     margin-top: 0;
 }
 
+.inlineBut{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.but{
+    margin-right: 10px;
+}
+
+.top{
+    margin-left: 10px;
+}
 
