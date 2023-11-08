@@ -204,4 +204,8 @@ span{
     color: darkgray;
 }
 
-
+.tbl{
+    background-image: url("aesthetic-neon-wallpaper-0f0ae73eba21fd1c1d95d0b498beb0d0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
