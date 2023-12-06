@@ -5,15 +5,18 @@
   <title>Midwest</title>
   <link rel="stylesheet" href="css/Final.css">
   <link rel="icon" href="Images/hotpng.com.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content='width=800'>
 </head>
 <body>
 <div class="block">
+  <a name="top"></a>
   <h1><a href="index.html">Midwest Shop</a></h1>
   <div class="inline">
     <div class="navigation">
       <p>
-        <a class="nav" href="Merch.html">Merch</a>
-        <a class="nav" href="Music.html">Music</a>
+        <a href="Merch.html">Merch</a>
+        <a href="Music.html">Music</a>
       </p>
     </div>
     <div class="search">
@@ -25,126 +28,128 @@
       <legend>Make an order</legend>
       <div class="block1">
         <p>
-          <input class="input" name="name" type="text" value="" placeholder="What is your name?">
+          <input class="input" name="name" type="text" value="Name" onfocus="if(value=='Name') value =''" onblur="if(value=='') value='Name'">
         </p>
         <p>
-          <input class="input" name="email" type="text" value="" placeholder="Email">
+          <input class="input" name="email" type="text" value="Email" onfocus="if(value=='Email') value =''" onblur="if(value=='') value='Email'">
         </p>
         <p>
-          <input class="input" name="phoneNumber" type="text" value="" placeholder="Phone number">
+          <input class="input" name="phoneNumber" type="text" value="Phone number" onfocus="if(value=='Phone number') value=''" onblur="if(value=='') value='Phone number'">
         </p>
         <p>
-          <input class="input" type="password" name="password" placeholder="Password" minlength="8">
+          <input class="input" type="text" name="password" value="Password" onfocus="if(value=='Password'){(this.type='password');value = ''}" onblur="if(value==''){(this.type='text');value='Password'}" minlength="8">
         </p>
         <p>
-          <input class="input" name="date" type="text" value="" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')">
+          <input class="input" name="date" type="text" value="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')">
         </p>
       </div>
       <div class="block1">
         <p class="formSens">What would you like to get?</p>
-        <table id="tbl0" class="tbl">
+        <table class="tbl" id="tbl0">
           <tr>
             <td><a href="Images/a3321951232_9.jpg"><img src="Images/a3321951232_9.jpg" width="150"></a>
               <br>HOME - Odyssey<br>Album, Record/Vinyl
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(1)">Add</b>/<b class="noDB" onclick="minus(1)">Delete,</b> <b id="col_1">0</b><b>,</b> <b id="cena_1">25</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="111">
+              <br><input type="checkbox" name="check" value="add" id="01"><label for="01">Add</label>, 25$
               <br>&nbsp;</td>
             <td><a href="Images/5263541.jpg"><img src="Images/5263541.jpg" width="150"></a>
               <br>Mr.Kitty - Time<br>Album, Compact Disc
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(2)">Add</b>/<b class="noDB" onclick="minus(2)">Delete,</b> <b id="col_2">0</b><b>,</b> <b id="cena_2">20</b>$
+              &nbsp;<input type="hidden" name="vendor_code" value="222">
+              <br><input type="checkbox" name="check" value="add" id="02"><label for="02">Add</label>, 20$
               <br>&nbsp;</td>
             <td><a href="https://lastfm.freetls.fastly.net/i/u/300x300/3787b2c2983334e35225812399f95dcf.jpg"><img src="https://lastfm.freetls.fastly.net/i/u/300x300/3787b2c2983334e35225812399f95dcf.jpg" width="150"></a>
               <br>Vestron Vulture -<br>Lionheart<br>Album, Cassette
-              <br><b class="noDB" onclick="plus(3)">Add</b>/<b class="noDB" onclick="minus(3)">Delete,</b> <b id="col_3">0</b><b>,</b> <b id="cena_3">23</b>$
+              <input type="hidden" name="vendor_code" value="333">
+              <br><input type="checkbox" name="check" value="add" id="03"><label for="03">Add</label>, 23$
               <br>&nbsp;</td>
             <td><a href="Images/R-6182378-1597268911-4599.jpg"><img src="Images/R-6182378-1597268911-4599.jpg" width="150"></a>
               <br>Mr.Kitty - Time<br>Album, Cassette
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(4)">Add</b>/<b class="noDB" onclick="minus(4)">Delete,</b> <b id="col_4">0</b><b>,</b> <b id="cena_4">23</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="444">
+              <br><input type="checkbox" name="check" value="add" id="04"><label for="04">Add</label>, 23$
               <br>&nbsp;</td>
           </tr>
           <tr>
             <td><a href="Images/The_Chain_Gang_of_1974_-_Daydream_Forever.jpg"><img src="Images/The_Chain_Gang_of_1974_-_Daydream_Forever.jpg" width="150"></a>
-              <br>The Chain Gang of 1974<br>Daydream Forever<br>Album, Cassette
-              <br><b class="noDB" onclick="plus(5)">Add</b>/<b class="noDB" onclick="minus(5)">Delete,</b> <b id="col_5">0</b><b>,</b> <b id="cena_5">23</b>$
+              <br>The Chain Gang of 1974 - <br>Daydream Forever<br>Album, Cassette<input type="hidden" name="vendor_code" value="555">
+              <br><input type="checkbox" name="check" value="add" id="05"><label for="05">Add</label>, 23$
               <br>&nbsp;</td>
             <td><a href="Images/a0740538027_16.jpg"><img src="Images/a0740538027_16.jpg" width="150"></a>
-              <br>Vestron Vulture - Super Liger<br>Album, Compact Disc<br>
-              <br><b class="noDB" onclick="plus(6)">Add</b>/<b class="noDB" onclick="minus(6)">Delete,</b> <b id="col_6">0</b><b>,</b> <b id="cena_6">20</b>$
+              <br>Vestron Vulture - Super Liger<br>Album, Compact Disc<input type="hidden" name="vendor_code" value="666">
+              <br><br><input type="checkbox" name="check" value="add" id="06"><label for="06">Add</label>, 20$
               <br>&nbsp;</td>
             <td><a href="Images/a0275188149_10.jpg"><img src="Images/a0275188149_10.jpg" width="150"></a>
               <br>Glare - Blank<br>Album, Compact Disc
-              <br><br>
-              <br><b class="noDB" onclick="plus(7)">Add</b>/<b class="noDB" onclick="minus(7)">Delete,</b> <b id="col_7">0</b><b>,</b> <b id="cena_7">20</b>$
+              <br><br><input type="hidden" name="vendor_code" value="777">
+              <br><input type="checkbox" name="check" value="add" id="07"><label for="07">Add</label>, 20$
               <br>&nbsp;</td>
             <td><a href="Images/R-18109816-1617308388-8950.jpg"><img src="Images/R-18109816-1617308388-8950.jpg" width="150"></a>
               <br>HOME - Odyssey<br>Album, Cassette
-              <br>&nbsp;<br>
-              <br><b class="noDB" onclick="plus(8)">Add</b>/<b class="noDB" onclick="minus(8)">Delete,</b> <b id="col_8">0</b><b>,</b> <b id="cena_8">23</b>$
+              <br>&nbsp;<br><input type="hidden" name="vendor_code" value="888">
+              <br><input type="checkbox" name="check" value="add" id="08"><label for="08">Add</label>, 23$
               <br>&nbsp;</td>
           </tr>
           <tr>
             <td><a href="https://shop.pastelghost.com/cdn/shop/products/shadows_cassette.png?v=1631904743"><img src="https://shop.pastelghost.com/cdn/shop/products/shadows_cassette.png?v=1631904743" width="150"></a>
               <br>Pastel Ghost - Shadows<br>Album, Cassette
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(9)">Add</b>/<b class="noDB" onclick="minus(9)">Delete,</b> <b id="col_9">0</b><b>,</b> <b id="cena_9">23</b>$
+              &nbsp;<input type="hidden" name="vendor_code" value="999">
+              <br><input type="checkbox" name="check" value="add" id="09"><label for="09">Add</label>, 23$
               <br>&nbsp;</td>
             <td><a href="https://ih1.redbubble.net/image.5065916925.5646/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,front,square_product,x600-bg,f8f8f8.1.jpg"><img src="https://ih1.redbubble.net/image.5065916925.5646/ssrco,mens_premium_t_shirt,mens,101010:01c5ca27c6,front,square_product,x600-bg,f8f8f8.1.jpg" width="150"></a>
               <br>"Vestron Vulture" T-Shirt
-              <br>&nbsp;<br>
-              <br><b class="noDB" onclick="plus(10)">Add</b>/<b class="noDB" onclick="minus(10)">Delete,</b> <b id="col_10">0</b><b>,</b> <b id="cena_10">17</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="9990">
+              <br><input type="checkbox" name="check" value="add" id="10"><label for="10">Add</label>, 17$
               <br>&nbsp;</td>
             <td><a href="Images/shirt-1572853547-bf898cba66b8db7c2cccf300387f6ac3.jpg"><img src="Images/shirt-1572853547-bf898cba66b8db7c2cccf300387f6ac3.jpg" width="150"></a>
               <br>Vaporwave T-Shirt
-              <br>&nbsp;<br><br>
-              <br><b class="noDB" onclick="plus(11)">Add</b>/<b class="noDB" onclick="minus(11)">Delete,</b> <b id="col_11">0</b><b>,</b> <b id="cena_11">17</b>$
+              <br>&nbsp;<br><input type="hidden" name="vendor_code" value="9991">
+              <br><input type="checkbox" name="check" value="add" id="11"><label for="11">Add</label>, 17$
               <br>&nbsp;</td>
             <td><a href="https://fandbox.ru/wp-content/uploads/2017/07/m-lon-hotlinemiami_1482275337_310.jpg"><img src="https://fandbox.ru/wp-content/uploads/2017/07/m-lon-hotlinemiami_1482275337_310.jpg" width="150"></a>
-              <br>"Hotline Miami"<br>Long Sleeve<br>
-              <br>
-              <br><b class="noDB" onclick="plus(12)">Add</b>/<b class="noDB" onclick="minus(12)">Delete,</b> <b id="col_12">0</b><b>,</b> <b id="cena_12">19</b>$
+              <br>"Hotline Miami"<br>Long Sleeve
+              <br><input type="hidden" name="vendor_code" value="9992">
+              <br><input type="checkbox" name="check" value="add" id="12"><label for="12">Add</label>, 19$
               <br>&nbsp;</td>
           </tr>
           <tr>
             <td><a href="Images/ssrco,slim_fit_t_shirt,mens,101010%2001c5ca27c6,front,square_product,600x600.jpg"><img src="Images/ssrco,slim_fit_t_shirt,mens,101010%2001c5ca27c6,front,square_product,600x600.jpg" width="150"></a>
               <br>"Mr.Kitty" T-Shirt<br>
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(13)">Add</b>/<b class="noDB" onclick="minus(13)">Delete,</b> <b id="col_13">0</b><b>,</b> <b id="cena_13">17</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="9993">
+              <br><input type="checkbox" name="check" value="add" id="13"><label for="13">Add</label>, 17$
               <br>&nbsp;</td>
             <td><a href="Images/ssrco,classic_tee,womens,101010%2001c5ca27c6,front_alt,square_product,600x600.jpg"><img src="Images/ssrco,classic_tee,womens,101010%2001c5ca27c6,front_alt,square_product,600x600.jpg" width="150"></a>
               <br>Synthwave T-Shirt<br>
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(14)">Add</b>/<b class="noDB" onclick="minus(14)">Delete,</b> <b id="col_14">0</b><b>,</b> <b id="cena_14">17</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="9994">
+              <br><input type="checkbox" name="check" value="add" id="14"><label for="14">Add</label>, 17$
               <br>&nbsp;</td>
             <td><a href="Images/glare-band-merchs.jpg"><img src="Images/glare-band-merchs.jpg" width="150"></a>
-              <br>"Glare" T-Shirt<br><br>
-              <br><b class="noDB" onclick="plus(15)">Add</b>/<b class="noDB" onclick="minus(15)">Delete,</b> <b id="col_15">0</b><b>,</b> <b id="cena_15">17</b>$
+              <br>"Glare" T-Shirt<br><br><input type="hidden" name="vendor_code" value="9995">
+              <br><input type="checkbox" name="check" value="add" id="15"><label for="15">Add</label>, 17$
               <br>&nbsp;</td>
             <td><a href="Images/ssrco,mhoodie,mens,101010%2001c5ca27c6,front,square_product,x600-bg,f8f8f8.1u1.jpg"><img src="Images/ssrco,mhoodie,mens,101010%2001c5ca27c6,front,square_product,x600-bg,f8f8f8.1u1.jpg" width="150"></a>
               <br>"Mr.Kitty" Hoodie<br>
-              <br>&nbsp;
-              <br><b class="noDB" onclick="plus(16)">Add</b>/<b class="noDB" onclick="minus(16)">Delete,</b> <b id="col_16">0</b><b>,</b> <b id="cena_16">20</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="9996">
+              <br><input type="checkbox" name="check" value="add" id="16"><label for="16">Add</label>, 20$
               <br>&nbsp;</td>
           </tr>
           <tr>
             <td><a href="Images/ssrco,mhoodie,mens,101010%2001c5ca27c6,front,square_product,x600-bg,f8f8f8.1u1.jpg"><img src="Images/ssrco,mhoodie,mens,101010%2001c5ca27c6,front,square_product,x600-bg,f8f8f8.1u1.jpg" width="150"></a>
               <br>"Mr.Kitty" Hoodie<br>
-              <br>&nbsp;<br>
-              <br><b class="noDB" onclick="plus(17)">Add</b>/<b class="noDB" onclick="minus(17)">Delete,</b> <b id="col_17">0</b><b>,</b> <b id="cena_17">20</b>$
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="9997">
+              <br><input type="checkbox" name="check" value="add" id="17"><label for="17">Add</label>, 20$
               <br>&nbsp;</td>
             <td><a href="https://www.vaporwavefashion.com/cdn/shop/products/chill-station-vaporwave-hoodie_1f7a9c8b-fb77-4869-b668-e0ea0306e794.jpeg?v=1578186624"><img src="https://www.vaporwavefashion.com/cdn/shop/products/chill-station-vaporwave-hoodie_1f7a9c8b-fb77-4869-b668-e0ea0306e794.jpeg?v=1578186624" width="150"></a>
               <br>Vaporwave Hoodie
-              <br>&nbsp;<br><br>
-              <br><b class="noDB" onclick="plus(18)">Add</b>/<b class="noDB" onclick="minus(18)">Delete,</b> <b id="col_18">0</b><b>,</b> <b id="cena_18">20</b>$
+              <br>&nbsp;<br><input type="hidden" name="vendor_code" value="9998">
+              <br><input type="checkbox" name="check" value="add" id="18"><label for="18">Add</label>, 20$
               <br>&nbsp;</td>
             <td><a href="https://ih1.redbubble.net/image.4066983161.4891/ssrco,mhoodie,mens,322e3f:696a94a5d4,front,square_product,x600-bg,f8f8f8.1.jpg"><img src="https://ih1.redbubble.net/image.4066983161.4891/ssrco,mhoodie,mens,322e3f:696a94a5d4,front,square_product,x600-bg,f8f8f8.1.jpg" width="150"></a>
-              <br>"Pastel Ghost" Hoodie
-              <br>&nbsp;<br>
-              <br><b class="noDB" onclick="plus(19)">Add</b>/<b class="noDB" onclick="minus(19)">Delete,</b> <b id="col_19">0</b><b>,</b> <b id="cena_19">20</b>$
+              <br>"Pastel Ghost" Hoodie<br>
+              <br>&nbsp;<input type="hidden" name="vendor_code" value="9999">
+              <br><input type="checkbox" name="check" value="add" id="19"><label for="19">Add</label>, 20$
               <br>&nbsp;</td>
           </tr>
         </table>
+      </div>
         <div class="block1">
           <p class="formSens">
             Where are you live?<br>
@@ -156,25 +161,17 @@
             <label for="3">Asia</label><br>
           </p>
         </div>
-      </div>
-      <div class="block1">
-        <div class="formSens">
-          <p class="cart">Cart: <b id="itog">0</b>$</p>
-          &nbsp;
-          <p class="cart" class="noDB" onclick="cl()">Clear</p>
-        </div>
-      <div class="inlineBut">
+        <div class="inlineBut">
           <p class="but">
-            <input class="button" name="submit" type="Submit" value="Submit">
+            <input class="button" name="submit" type="Submit" value="Submit" width="200">
           </p>
           <p class="top">
-            <a href="#top"><img src="Images/klipartz.png" width="20"></a>
+            <a href="#top"><img src="Images/klipartz.png" width="28"></a>
           </p>
-      </div>
-    </div>
+        </div>
     </fieldset>
   </form>
-</div>
+  </div>
 </body>
 <script src="js/Final.js"></script>
 </html>
