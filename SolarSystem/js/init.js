@@ -24,3 +24,4 @@ camera.lookAt(0, 0, 0);
 
 let cameraRotationX = 0;
 let cameraRotationY = 0;
+let isMouseDown = false;
