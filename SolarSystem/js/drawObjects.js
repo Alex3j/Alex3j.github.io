@@ -105,6 +105,7 @@ function drawObjects() {
         const a = semiMajor * (1 + (body.orbit.eccentricity))
         const p = semiMajor * (1 - (body.orbit.eccentricity))
         const ax = (a - p) / 2;
+        //const ax = Math.sqrt((semiMajor*semiMajor)-(semiMinor*semiMinor)); фокус через полуоси
 
         var curve = new THREE.EllipseCurve(ax, 0, semiMajor, semiMinor, 0, 2 * Math.PI, false, 0);
 
